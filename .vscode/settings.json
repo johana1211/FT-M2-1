@@ -1,7 +1,7 @@
 {
-  "cSpell.words": [
-    "boton",
-    "flexbox",
-    "musica"
+  "cSpell.enableFiletypes": [
+    "!javascript",
+    "!javascriptreact",
+    "!json"
   ]
 }
