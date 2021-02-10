@@ -1,0 +1,26 @@
+.btn{
+    
+    display: inline-flex; 
+    color: rgb(102, 220, 255); 
+    font-size: 15px;
+    line-height: 8px;
+    padding: 13px; 
+    border-radius: 13px; 
+    font-family: Georgia, serif;
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: italic; 
+    font-variant: small-caps; 
+    text-transform: none;
+    background-image: linear-gradient(135deg, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+    border: 2px solid rgb(28, 110, 164); 
+    display: inline-block;  
+}
+
+.inp{
+    height: 40px;
+    border-radius: 13px;
+    width: 290px;
+
+}
