@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
-import { increment, decrement } from '../actions';
+import { increment, decrement, addTodo, removeTodo } from '../actions';
 
 class Counter extends Component {
     // Extra Credit
@@ -18,11 +18,11 @@ class Counter extends Component {
         return (
             <p>
                 Clickeado: {this.props.count} veces
-                <button onClick={() => {/* Completar */ }}>
-                    + {/* Incremeta */}
+                <button onClick={() => {this.props.increment()}}>
+                    + 
                 </button>
-                <button onClick={() => {/* Completar */ }}>
-                    -  {/* Decrementa */}
+                <button onClick={() => {this.props.decrement()}}>
+                    -  
                 </button>
                  {/* Si quieres hacer los extra credit puede descomentar las lineas de abajo */}
                 {/* <button onClick={this.incrementIfOdd}>
@@ -31,6 +31,9 @@ class Counter extends Component {
                 <button onClick={this.incrementAsync}>
                     Incrementa despues de un segundos
                 </button>  */}
+                <button onClick={()=> {this.props.addTodo()}}>
+                    AddToDo
+                </button>
             </p>
         );
     }
@@ -43,7 +46,8 @@ class Counter extends Component {
 // recibiría sólo las partes relevantes que necesita del objeto de estado.
 const mapStateToProps = (state) => {
     return {
-        count: state.count
+        count: state.count, 
+        todos: state.todos   // this.props.count
     };
 };
 
@@ -51,4 +55,4 @@ const mapStateToProps = (state) => {
 // Sin esto, este componente es sólo un componente tonto de React.
 //Pasamos todas las funciones que dependen de Redux, junto con el propio componente,
 // para que Redux se dé a conocer a este componente.
-export default connect(mapStateToProps, { increment, decrement })(Counter);
+export default connect(mapStateToProps, { increment, decrement, addTodo, removeTodo })(Counter);
