@@ -12,7 +12,7 @@
 // //     </div>
 // //     <div>
 // //       <h2>Agregar nueva película</h2>
-// //       <Form /    console.log(action.payload.Search);>
+//       <Form /    console.log(action.payload.Search);>
 // //     </div>
 // //     <div>
 // //       <h2>OMDB Búsqueda</h2>
@@ -21,7 +21,6 @@
 // //   </div>
 // // );
 
-
 // // const App = () => (
 // //   <Router>
 // //     <Switch>
@@ -29,18 +28,17 @@
 // //       <Route path="/post" component={Post}/>
 // //     </Switch>
 // //   </Router>
-// // );
-
-// const App = () => (
-//     <div id="bodyContainer">
-//       <div>
-//         <List />
-//       </div>
-//       <div>
-//         <Post />
-//       </div>
-//     </div>
 // );
 
-// export default App;
+//const App = () => (
+//  <div id="bodyContainer">
+//    <div>
+//      <List />
+//    </div>
+//    <div>
+//      <Post />
+//    </div>
+//  </div>
+//);
 
+//export default App;
